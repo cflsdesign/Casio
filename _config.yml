@@ -1,0 +1,23 @@
+theme: null
+title: DJ Casio Presskit
+description: Presskit oficial de DJ Casio - Fotos, música, biografía y contacto
+author: cflsdesign
+url: https://cflsdesign.github.io/Casio
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+
+# Collections
+collections_dir: collections
+collections:
+  media:
+    output: false
+
+# Exclude files
+exclude:
+  - .github
+  - .gitignore
+  - README.md
+  - LICENSE
