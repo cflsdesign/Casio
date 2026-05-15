@@ -177,7 +177,7 @@ html {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 107, 0, 0.4);
+    box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
 }
 
 .secondary-button {
@@ -230,7 +230,7 @@ html {
     max-width: 800px;
     width: 100%;
     background: transparent;
-    padding: 0;
+    padding: 10;
     border: none;
     border-radius: 0;
     box-shadow: none;
