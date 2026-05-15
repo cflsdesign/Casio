@@ -141,10 +141,10 @@ html {
 }
 
 .hero h1 {
-    font-size: 10rem;
+    font-size: 30rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    color: var(--text-primary);
+    color: #ffffff;
     letter-spacing: 3px;
     font-family: 'Stack Sans Text', sans-serif;
 }
