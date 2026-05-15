@@ -109,7 +109,7 @@ html {
 
 /* ==================== HERO ==================== */
 .hero {
-    height: 100vh;
+    height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,13 +119,6 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.75);
 }
 
 .hero-content {
