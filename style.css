@@ -109,14 +109,14 @@ html {
 
 /* ==================== HERO ==================== */
 .hero {
-    height: 130vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin-top: 60px;
     background-image: url('photos/Dj_Casio_5.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
