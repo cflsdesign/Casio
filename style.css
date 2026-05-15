@@ -3,6 +3,7 @@
 /* ==================== VARIABLES Y RESET ==================== */
 :root {
     --primary: #000000; /* Black */
+    --primary: #000000; /* Purple */
     --secondary: #00FF7F; /* Mint */
     --dark-bg: #ffffff; /* White */
     --card-bg: #f5f5f5; /* Light gray */
@@ -70,7 +71,7 @@ html {
 .logo {
     font-size: 1.8rem;
     font-weight: 900;
-    color: var(--primary);
+    color: var(--secondary);
     letter-spacing: 2px;
 }
 
