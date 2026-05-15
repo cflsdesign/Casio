@@ -235,7 +235,7 @@ html {
     border-radius: 0;
     box-shadow: none;
     transition: none;
-    text-align: center;
+    text-align: justify;
 }
 
 .bio-short h3,
