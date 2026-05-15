@@ -144,7 +144,7 @@ html {
     font-size: 30rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color:  var(--dark-bg);
     letter-spacing: 3px;
     font-family: 'Stack Sans Text', sans-serif;
 }
