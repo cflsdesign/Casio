@@ -70,7 +70,7 @@ html {
 
 .logo {
     font-size: 1.8rem;
-    font-weight: 900;
+    font-weight: 500;
     color: var(--secondary);
     letter-spacing: 2px;
 }
@@ -142,7 +142,7 @@ html {
 
 .hero h1 {
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 1200;
     margin-bottom: 1rem;
     color: var(--text-primary);
     letter-spacing: 3px;
