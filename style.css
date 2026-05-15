@@ -1,13 +1,15 @@
+@import url('https://fonts.stackoverflow.com/stack-sans.css');
+
 /* ==================== VARIABLES Y RESET ==================== */
 :root {
-    --primary: #FF6B00;
-    --secondary: #00D9FF;
-    --dark-bg: #0a0a0a;
-    --card-bg: #1a1a1a;
-    --text-primary: #ffffff;
-    --text-secondary: #b0b0b0;
-    --border: #2a2a2a;
-    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --primary: #8A2BE2; /* Purple */
+    --secondary: #00FF7F; /* Mint */
+    --dark-bg: #ffffff; /* White */
+    --card-bg: #f5f5f5; /* Light gray */
+    --text-primary: #000000; /* Black */
+    --text-secondary: #666666; /* Gray */
+    --border: #cccccc; /* Light border */
+    --transition: all 0.3s ease;
 }
 
 * {
@@ -17,8 +19,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--dark-bg) 0%, #1a0f2e 100%);
+    font-family: 'Stack Sans Text', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--dark-bg);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -40,7 +42,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
@@ -68,10 +70,7 @@ html {
 .logo {
     font-size: 1.8rem;
     font-weight: 900;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--primary);
     letter-spacing: 2px;
 }
 
@@ -114,44 +113,24 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(255, 107, 0, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
     position: relative;
-    overflow: hidden;
     margin-top: 60px;
+    background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero::before {
     content: '';
     position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
-    top: -100px;
-    right: -100px;
-    opacity: 0.1;
-    animation: float 6s ease-in-out infinite;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
-    bottom: -100px;
-    left: -100px;
-    opacity: 0.1;
-    animation: float 8s ease-in-out infinite reverse;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) translateX(0px); }
-    50% { transform: translateY(-30px) translateX(30px); }
+    inset: 0;
+    background: rgba(255, 255, 255, 0.75);
 }
 
 .hero-content {
     text-align: center;
-    z-index: 10;
+    z-index: 1;
     animation: fadeInUp 0.8s ease 0.2s forwards;
     opacity: 0;
 }
@@ -171,12 +150,9 @@ html {
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--text-primary);
     letter-spacing: 3px;
-    text-shadow: 0 0 30px rgba(255, 107, 0, 0.3);
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .hero p {
@@ -201,9 +177,8 @@ html {
 }
 
 .cta-button {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: var(--primary);
     color: var(--dark-bg);
-    box-shadow: 0 8px 25px rgba(255, 107, 0, 0.3);
 }
 
 .cta-button:hover {
@@ -212,7 +187,7 @@ html {
 }
 
 .secondary-button {
-    background: rgba(255, 107, 0, 0.1);
+    background: var(--dark-bg);
     color: var(--primary);
     border: 2px solid var(--primary);
 }
@@ -235,6 +210,7 @@ html {
     position: relative;
     display: inline-block;
     width: 100%;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .section h2::after {
@@ -245,33 +221,27 @@ html {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: var(--primary);
     border-radius: 2px;
 }
 
 /* ==================== BIOGRAFÍA ==================== */
 .bio-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
 }
 
-.bio-short,
 .bio-long {
-    background: rgba(255, 107, 0, 0.05);
-    padding: 2rem;
-    border-radius: 15px;
-    border: 1px solid var(--border);
-    backdrop-filter: blur(10px);
-    transition: var(--transition);
-}
-
-.bio-short:hover,
-.bio-long:hover {
-    border-color: var(--primary);
-    background: rgba(255, 107, 0, 0.1);
-    transform: translateY(-5px);
+    max-width: 800px;
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+    text-align: center;
 }
 
 .bio-short h3,
@@ -279,6 +249,7 @@ html {
     color: var(--primary);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .bio-short p,
@@ -296,7 +267,7 @@ html {
 }
 
 .gallery-item {
-    background: linear-gradient(135deg, rgba(255, 107, 0, 0.05) 0%, rgba(0, 217, 255, 0.05) 100%);
+    background: var(--card-bg);
     padding: 2.5rem;
     border-radius: 15px;
     border: 1px solid var(--border);
@@ -308,13 +279,13 @@ html {
 .gallery-item:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
-    box-shadow: 0 20px 40px rgba(255, 107, 0, 0.2);
 }
 
 .gallery-item h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--text-primary);
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .gallery-item p {
@@ -324,7 +295,7 @@ html {
 
 /* ==================== MÚSICA ==================== */
 .music-container {
-    background: rgba(255, 107, 0, 0.05);
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
     border: 1px solid var(--border);
@@ -334,6 +305,7 @@ html {
     color: var(--primary);
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .music-list {
@@ -350,8 +322,8 @@ html {
 }
 
 .music-list li:hover {
-    background: rgba(255, 107, 0, 0.1);
-    padding-left: 2rem;
+    background: rgba(138, 43, 226, 0.1);
+    padding-left: 1.5rem;
 }
 
 .music-list li:last-child {
@@ -397,7 +369,7 @@ html {
 }
 
 .press-item {
-    background: rgba(0, 217, 255, 0.05);
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 15px;
     border-left: 4px solid var(--primary);
@@ -406,13 +378,13 @@ html {
 
 .press-item:hover {
     transform: translateX(10px);
-    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
 }
 
 .press-item h3 {
     color: var(--text-primary);
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .press-date {
@@ -455,7 +427,7 @@ html {
 
 .social-btn {
     padding: 12px 30px;
-    background: rgba(255, 107, 0, 0.1);
+    background: var(--dark-bg);
     border: 2px solid var(--primary);
     color: var(--primary);
     text-decoration: none;
@@ -469,12 +441,11 @@ html {
     background: var(--primary);
     color: var(--dark-bg);
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
 }
 
 /* ==================== CONTACTO ==================== */
 .contact-section {
-    background: linear-gradient(135deg, rgba(255, 107, 0, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+    background: var(--card-bg);
     border-radius: 20px;
     padding: 4rem;
 }
@@ -487,24 +458,23 @@ html {
 }
 
 .contact-card {
-    background: rgba(10, 10, 10, 0.5);
+    background: var(--dark-bg);
     padding: 2rem;
     border-radius: 15px;
     border: 1px solid var(--border);
     text-align: center;
     transition: var(--transition);
-    backdrop-filter: blur(10px);
 }
 
 .contact-card:hover {
     border-color: var(--primary);
-    box-shadow: 0 15px 40px rgba(255, 107, 0, 0.2);
 }
 
 .contact-card h3 {
     color: var(--primary);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .contact-card p {
@@ -515,7 +485,7 @@ html {
 
 /* ==================== FOOTER ==================== */
 .footer {
-    background: rgba(10, 10, 10, 0.8);
+    background: var(--card-bg);
     border-top: 1px solid var(--border);
     padding: 2rem 0;
     text-align: center;
