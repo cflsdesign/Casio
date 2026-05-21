@@ -191,6 +191,8 @@ const translations = {
 const i18nElements = document.querySelectorAll('[data-i18n]');
 const i18nLabelElements = document.querySelectorAll('[data-i18n-label]');
 const langToggle = document.getElementById('lang-toggle');
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.querySelector('.nav-links');
 
 function setLanguage(lang) {
     const strings = translations[lang] || translations.es;
@@ -217,6 +219,20 @@ if (langToggle) {
     langToggle.addEventListener('click', () => {
         const currentLang = localStorage.getItem('siteLang') || 'es';
         setLanguage(currentLang === 'es' ? 'en' : 'es');
+    });
+}
+
+if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    navLinks.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
     });
 }
 
