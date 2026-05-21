@@ -599,6 +599,26 @@ html {
         font-size: 2rem;
     }
 
+    .gallery-section {
+        min-height: auto;
+        padding: 2rem 0 1rem;
+    }
+
+    .carousel-container {
+        height: 65vh;
+    }
+
+    .gallery-header {
+        padding: 0 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel-control {
+        width: 52px;
+        height: 52px;
+        font-size: 2rem;
+    }
+
     .bio-container,
     .contact-grid {
         grid-template-columns: 1fr;
@@ -642,6 +662,24 @@ html {
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .gallery-section {
+        padding: 1.5rem 0;
+    }
+
+    .carousel-container {
+        height: 55vh;
+    }
+
+    .carousel-control {
+        width: 48px;
+        height: 48px;
+        font-size: 1.8rem;
+    }
+
+    .gallery-header h2 {
+        font-size: 1.8rem;
     }
 
     .section {
