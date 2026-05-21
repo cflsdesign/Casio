@@ -112,3 +112,44 @@ window.addEventListener('scroll', animateNumbers);
 window.addEventListener('load', animateNumbers);
 
 console.log('DJ Casio Presskit - Website loaded successfully! 🎵');
+
+const carouselTrack = document.querySelector('.carousel-track');
+const carouselItems = Array.from(document.querySelectorAll('.carousel-item'));
+const prevButton = document.querySelector('.carousel-control.prev');
+const nextButton = document.querySelector('.carousel-control.next');
+let currentSlideIndex = 0;
+
+function updateCarousel(index) {
+    if (!carouselTrack || carouselItems.length === 0) return;
+    currentSlideIndex = (index + carouselItems.length) % carouselItems.length;
+    carouselTrack.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+    carouselItems.forEach((item, idx) => item.classList.toggle('active', idx === currentSlideIndex));
+}
+
+if (prevButton) {
+    prevButton.addEventListener('click', () => updateCarousel(currentSlideIndex - 1));
+}
+
+if (nextButton) {
+    nextButton.addEventListener('click', () => updateCarousel(currentSlideIndex + 1));
+}
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+        updateCarousel(currentSlideIndex - 1);
+    } else if (event.key === 'ArrowRight') {
+        updateCarousel(currentSlideIndex + 1);
+    }
+});
+
+let carouselInterval = setInterval(() => updateCarousel(currentSlideIndex + 1), 7000);
+
+[prevButton, nextButton].forEach(button => {
+    if (!button) return;
+    button.addEventListener('mouseenter', () => clearInterval(carouselInterval));
+    button.addEventListener('mouseleave', () => {
+        carouselInterval = setInterval(() => updateCarousel(currentSlideIndex + 1), 7000);
+    });
+});
+
+updateCarousel(0);
