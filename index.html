@@ -13,14 +13,15 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo">WELCOME</div>
+            <div class="logo" data-i18n="logo-text">WELCOME</div>
             <ul class="nav-links">
-                <li><a href="#fotos">Fotos</a></li>
-                <li><a href="#eventos">Eventos</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-               <!--  <li><a href="#prensa">Prensa</a></li> -->
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#fotos" data-i18n="nav-fotos">Fotos</a></li>
+                <li><a href="#eventos" data-i18n="nav-eventos">Eventos</a></li>
+                <li><a href="#musica" data-i18n="nav-musica">Música</a></li>
+                <li><a href="#biografia" data-i18n="nav-biografia">Biografía</a></li>
+               <!--  <li><a href="#prensa" data-i18n="nav-prensa">Prensa</a></li> -->
+                <li><a href="#contacto" data-i18n="nav-contacto">Contacto</a></li>
+                <li class="lang-switch"><button id="lang-toggle" class="lang-toggle" type="button">EN</button></li>
             </ul>
         </div>
     </nav>
@@ -39,39 +40,25 @@
         
         <!-- Biografía Section -->
         <section id="biografia" class="section">
-            <h2>Bio</h2>
+            <h2 data-i18n="bio-title">Bio</h2>
            <div class="bio-container" >
                 <div class="bio-long">
-                    <h3>DJ CASIO</h3>
-                    <p>Con base en la Riviera Nayarit, México. 
-                        Disfruto diseñar atmósferas musicales para beach clubs, 
-                        restaurantes y espacios de alto tránsito donde la música
-                        es un elemento estratégico de la experiencia. </p>
+                    <h3 data-i18n="bio-heading">DJ CASIO</h3>
+                    <p data-i18n="bio-text-1">Con base en la Riviera Nayarit, México. Disfruto diseñar atmósferas musicales para beach clubs, restaurantes y espacios de alto tránsito donde la música es un elemento estratégico de la experiencia.</p>
                         <br>
-                        <h4>Propuesta</h4>
-                        <p>Fusiono varios generos necesarios para crear una historia, 
-                        empiezando con Jazzy, Funk, Soulful y Disco house elegante.
-                        Música House Sudáfricana de los 90's y 2000's empiezan a marcar el ritmo.
-                        Y cuando la pista lo require los sónidos de Nu‑disco, Tech House y algunas bombas, 
-                        enciendan la pista.</p>
+                        <h4 data-i18n="bio-subheading">Propuesta</h4>
+                        <p data-i18n="bio-text-2">Fusiono varios géneros necesarios para crear una historia, empezando con Jazzy, Funk, Soulful y Disco House elegante. Música House sudafricana de los 90's y 2000's empieza a marcar el ritmo. Y cuando la pista lo requiere, los sonidos de Nu‑disco, Tech House y algunas bombas encienden la pista.</p>
                         <br>
-                        <p>En mi sets construyo una narrativa que mantiene una energía constante, 
-                        sofisticada y accesible: transiciones son fluidas, grooves cálidos, 
-                        percusiones orgánicas que acompañan el flujo del lugar sin interrumpirlo
-                        —desde el día, atardecer y  hasta la noche—, 
-                        alineando la música con el ritmo del venue y la experiencia del cliente. 
-
-                        <strong>Reforzando la identidad del lugar a través de una 
-                        selección musical estratégica y adaptable.</strong></p>
+                        <p data-i18n="bio-text-3">En mis sets construyo una narrativa que mantiene una energía constante, sofisticada y accesible: transiciones fluidas, grooves cálidos y percusiones orgánicas que acompañan el flujo del lugar sin interrumpirlo —desde el día, atardecer y hasta la noche—, alineando la música con el ritmo del venue y la experiencia del cliente. <strong data-i18n="bio-strong">Reforzando la identidad del lugar a través de una selección musical estratégica y adaptable.</strong></p>
                         <br>
-                        <h4>Disponible:</h4>
+                        <h4 data-i18n="bio-available-title">Disponible:</h4>
                         <ul>
-                            <li>Actuaciones en clubes, restaurantes y beach clubs.</li>
-                            <li>Eventos privados</li>
-                            <li>Eventos corporativos</li>
-                            <li>Residencias artísticas</li>
-                            <li>Participaciones en festivales</li>
-                            <li>Eventos Internacionales</li>
+                            <li data-i18n="bio-available-1">Actuaciones en clubes, restaurantes y beach clubs.</li>
+                            <li data-i18n="bio-available-2">Eventos privados</li>
+                            <li data-i18n="bio-available-3">Eventos corporativos</li>
+                            <li data-i18n="bio-available-4">Residencias artísticas</li>
+                            <li data-i18n="bio-available-5">Participaciones en festivales</li>
+                            <li data-i18n="bio-available-6">Eventos Internacionales</li>
                         </ul>
 </div>
             </div>
@@ -80,11 +67,11 @@
         <!-- Fotos Section -->
         <section id="fotos" class="section gallery-section">
             <div class="gallery-header">
-                <h2>Galería</h2>
+                <h2 data-i18n="gallery-title">Galería</h2>
             </div>
             <div class="carousel-container">
                 <div class="carousel">
-                    <button class="carousel-control prev" aria-label="Anterior">‹</button>
+                    <button class="carousel-control prev" aria-label="Anterior" data-i18n-label="carousel-prev-label">‹</button>
                     <div class="carousel-track">
                         <div class="carousel-item active">
                             <div class="carousel-media" style="background-image: url('geleria/Casio1.jpg');"></div>
@@ -93,7 +80,7 @@
                             <div class="carousel-media" style="background-image: url('geleria/Dj_Casio_5.jpg');"></div>
                         </div>
                     </div>
-                    <button class="carousel-control next" aria-label="Siguiente">›</button>
+                    <button class="carousel-control next" aria-label="Siguiente" data-i18n-label="carousel-next-label">›</button>
                 </div>
             </div>
         </section>
@@ -147,15 +134,15 @@
 
         <!-- Eventos Section -->
         <section id="eventos" class="section">
-            <h2>Eventos</h2>
+            <h2 data-i18n="events-title">Eventos</h2>
             <div class="event-list">
                 <article class="event-item">
-                    <h3>Black Tiger</h3>
-                    <p>23 de Mayo 2026 — Calle Allende 103-B, Centro, 48300 Puerto Vallarta, Jal.</p>
+                    <h3 data-i18n="event-1-title">Black Tiger</h3>
+                    <p data-i18n="event-1-text">23 de Mayo 2026 — Calle Allende 103-B, Centro, 48300 Puerto Vallarta, Jal.</p>
                 </article>
                 <article class="event-item">
-                    <h3>Tierra Tropical Beach club</h3>
-                    <p>24 de Mayo 2026 — San Francisco, Nayarit</p>
+                    <h3 data-i18n="event-2-title">Tierra Tropical Beach club</h3>
+                    <p data-i18n="event-2-text">24 de Mayo 2026 — San Francisco, Nayarit</p>
                 </article>
             
             </div>
@@ -163,7 +150,7 @@
 
         <!-- Social & Links -->
         <section id="redes" class="section">
-            <h2>Sígueme</h2>
+            <h2 data-i18n="follow-title">Sígueme</h2>
             <div class="social-links">
                 <a href="https://open.spotify.com/user/1291365788?si=51f7965dbd4f46f4" class="social-btn" title="Spotify" target="_blank" rel="noreferrer"> Spotify</a>
                 <a href="https://soundcloud.com/mexicanjackmafia" class="social-btn" title="SoundCloud" target="_blank" rel="noreferrer"> SoundCloud</a>
@@ -174,10 +161,10 @@
 
         <!-- Contact Section -->
         <section id="contacto" class="section contact-section">
-            <h2>Contacto</h2>
+            <h2 data-i18n="contact-title">Contacto</h2>
             <div class="contact-grid">
                 <div class="contact-card">
-                    <h3>Booking</h3>
+                    <h3 data-i18n="booking-title">Booking</h3>
                     <p><a href="mailto:cflsdesign@gmail.com" class="contact-link">cflsdesign@gmail.com</a></p>
                     <p><a href="https://wa.me/523224291915" class="contact-link" target="_blank" rel="noreferrer">+52 (322) 4291915</a></p>
                 </div>
@@ -186,10 +173,10 @@
 
         <!-- Presskit Section -->
         <section id="presskit" class="section presskit-section">
-            <h2>Presskit</h2>
+            <h2 data-i18n="presskit-title">Presskit</h2>
             <div class="presskit-card">
-                <p>Descarga el presskit oficial con biografía, fotos de prensa, información de booking y enlaces de redes.</p>
-                <a href="presskit.pdf" class="cta-button" download>Descargar PDF</a>
+                <p data-i18n="presskit-text">Descarga el presskit oficial con biografía, fotos de prensa, información de booking y enlaces de redes.</p>
+                <a href="presskit.pdf" class="cta-button" download data-i18n="presskit-button">Descargar PDF</a>
             </div>
         </section>
 
@@ -198,7 +185,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 DJ Casio. Todos los derechos reservados.</p>
+            <p data-i18n="footer-text">© 2026 DJ Casio. Todos los derechos reservados.</p>
         </div>
     </footer>
 
