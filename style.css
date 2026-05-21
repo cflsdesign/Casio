@@ -260,7 +260,7 @@ html {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 180vh;
+    min-height: calc(180vh - 400px);
     padding: 3rem 0 2rem;
     background: #050505;
     color: #ffffff;
@@ -285,7 +285,7 @@ html {
 .carousel-container {
     width: 100%;
     max-width: 100%;
-    height: calc(180vh - 11rem);
+    height: calc(180vh - 400px - 11rem);
     display: flex;
     align-items: center;
     justify-content: center;
