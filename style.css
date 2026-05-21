@@ -219,6 +219,26 @@ html {
     border-radius: 2px;
 }
 
+.presskit-section {
+    background: transparent;
+}
+
+.presskit-card {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    padding: 2.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.presskit-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
 /* ==================== BIOGRAFÍA ==================== */
 .bio-container {
     display: flex;
