@@ -5,7 +5,12 @@
       "places": [
         { "name": "Solar Barracuda PVR", "instagram": "solar-barracuda-pvr" },
         { "name": "El Jardín Versalles PVR", "instagram": "el-jardin-versalles-pvr" },
-        { "name": "Blind Tiger PVR", "instagram": "blind-tiger-pvr" },
+        { "name": "Blind Tiger PVR", "instagram": "blind-tiger-pvr" }
+      ]
+    },
+    {
+      "regionKey": "region-pdm",
+      "places": [
         { "name": "Barracuda Punta de Mita", "instagram": "barracuda-punta-de-mita" },
         { "name": "Rústica Punta de Mita", "instagram": "rustica-punta-de-mita" },
         { "name": "Mauka Punta de Mita", "instagram": "mauka-punta-de-mita" }
