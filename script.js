@@ -204,6 +204,30 @@ const langToggle = document.getElementById('lang-toggle');
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
+async function loadPlays() {
+    try {
+        const res = await fetch('data/plays.json');
+        if (!res.ok) return;
+        const data = await res.json();
+        const grid = document.querySelector('.plays-grid');
+        if (!grid) return;
+        grid.innerHTML = '';
+        const lang = localStorage.getItem('siteLang') || document.documentElement.lang || 'es';
+        data.regions.forEach(region => {
+            const regionTitle = (translations[lang] && translations[lang][region.regionKey]) ? translations[lang][region.regionKey] : region.regionKey;
+            const regionDiv = document.createElement('div');
+            regionDiv.className = 'plays-region';
+            const itemsHtml = region.places.map(p => `
+                <li class="place-item"><span class="place-name">${p.name}</span> — <a href="https://instagram.com/${p.instagram}" target="_blank" rel="noreferrer">@${p.instagram}</a></li>
+            `).join('');
+            regionDiv.innerHTML = `<h3>${regionTitle}</h3><ul>${itemsHtml}</ul>`;
+            grid.appendChild(regionDiv);
+        });
+    } catch (e) {
+        console.error('Failed to load plays data', e);
+    }
+}
+
 function setLanguage(lang) {
     const strings = translations[lang] || translations.es;
     i18nElements.forEach(el => {
@@ -223,12 +247,14 @@ function setLanguage(lang) {
     if (langToggle) {
         langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
     }
+    if (typeof loadPlays === 'function') loadPlays();
 }
 
 if (langToggle) {
     langToggle.addEventListener('click', () => {
         const currentLang = localStorage.getItem('siteLang') || 'es';
         setLanguage(currentLang === 'es' ? 'en' : 'es');
+        if (typeof loadPlays === 'function') loadPlays();
     });
 }
 
@@ -248,6 +274,8 @@ if (navToggle && navLinks) {
 
 const initialLang = localStorage.getItem('siteLang') || 'es';
 setLanguage(initialLang);
+
+loadPlays();
 
 console.log('DJ Casio Presskit - Website loaded successfully! 🎵');
 

@@ -1,0 +1,22 @@
+{
+  "regions": [
+    {
+      "regionKey": "region-pv",
+      "places": [
+        { "name": "Black Tiger", "instagram": "blacktiger" }
+      ]
+    },
+    {
+      "regionKey": "region-sayulita",
+      "places": [
+        { "name": "Tierra Tropical", "instagram": "tierratropical" }
+      ]
+    },
+    {
+      "regionKey": "region-sma",
+      "places": [
+        { "name": "Example Venue", "instagram": "example" }
+      ]
+    }
+  ]
+}
