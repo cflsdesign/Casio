@@ -148,6 +148,11 @@ const translations = {
         'footer-text': '© 2026 DJ Casio. Todos los derechos reservados.',
         'carousel-prev-label': 'Anterior',
         'carousel-next-label': 'Siguiente'
+        ,
+        'plays-title': 'Plays at',
+        'region-pv': 'Puerto Vallarta',
+        'region-sayulita': 'Sayulita, San Pancho y Riviera Nayarit',
+        'region-sma': 'San Miguel de Allende'
     },
     en: {
         'logo-text': 'WELCOME',
@@ -185,6 +190,11 @@ const translations = {
         'footer-text': '© 2026 DJ Casio. All rights reserved.',
         'carousel-prev-label': 'Previous',
         'carousel-next-label': 'Next'
+        ,
+        'plays-title': 'Plays at',
+        'region-pv': 'Puerto Vallarta',
+        'region-sayulita': 'Sayulita, San Pancho & Riviera Nayarit',
+        'region-sma': 'San Miguel de Allende'
     }
 };
 

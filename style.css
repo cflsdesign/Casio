@@ -3,7 +3,7 @@
 /* ==================== VARIABLES Y RESET ==================== */
 :root {
     --primary: #000000; /* Black */
-    --primary: #000000; /* Purple */
+    --primary: #09ffc181; /* Mint */
     --secondary: #09ffc181; /* Mint */
     --dark-bg: #ffffff; /* White */
     --card-bg: #f5f5f5; /* Light gray */
@@ -243,7 +243,7 @@ html {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: 2px;
 }
 
@@ -268,6 +268,57 @@ html {
 }
 
 /* ==================== BIOGRAFÍA ==================== */
+/* ==================== PLAYS AT ==================== */
+.plays-section {
+    background: transparent;
+    color: var(--text-primary);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.plays-grid {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.plays-region {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.plays-region h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.plays-region ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plays-region .place-item {
+    margin: 0.6rem 0;
+    color: var(--text-secondary);
+}
+
+.plays-region .place-name {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .plays-grid {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+}
+
 .bio-container {
     display: flex;
     justify-content: center;
@@ -288,7 +339,7 @@ html {
 
 .bio-short h3,
 .bio-long h3 {
-    color: var(--primary);
+    color: var(--secondary);
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-family: 'Stack Sans Text', sans-serif;
