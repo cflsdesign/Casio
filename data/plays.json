@@ -17,14 +17,19 @@
       ]
     },
     {
-      "regionKey": "region-sayulita",
+      "regionKey": "region-sanpancho",
       "places": [
-        { "name": "Tierra Tropical Beach Club", "instagram": "tierra-tropical" },
         { "name": "TTR Polo Club San Pancho", "instagram": "ttr-polo-club-san-pancho" },
         { "name": "Rabia San Pancho", "instagram": "rabia-san-pancho" },
         { "name": "La Cervecería San Pancho", "instagram": "la-cerveceria-san-pancho" },
         { "name": "Café Bahía San Pancho", "instagram": "cafe-bahia-san-pancho" },
-        { "name": "La Fresona San Pancho", "instagram": "la-fresona-san-pancho" },
+        { "name": "La Fresona San Pancho", "instagram": "la-fresona-san-pancho" }
+      ]
+    },
+    {
+      "regionKey": "region-sayulita",
+      "places": [
+        { "name": "Tierra Tropical Beach Club", "instagram": "tierra-tropical" },
         { "name": "Yambak Sayulita", "instagram": "yambak-sayulita" },
         { "name": "Santa Sal Sayulita", "instagram": "santa-sal-sayulita" },
         { "name": "Hula Sayula Sayulita", "instagram": "hula-sayula" },
