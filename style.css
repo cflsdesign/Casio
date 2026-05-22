@@ -359,7 +359,7 @@ html {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: calc(180vh - 400px);
+    min-height: 70vh;
     padding: 3rem 0 2rem;
     background: #050505;
     color: #ffffff;
@@ -384,10 +384,57 @@ html {
 .carousel-container {
     width: 100%;
     max-width: 100%;
-    height: calc(180vh - 400px - 11rem);
+    height: min(70vh, 700px);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .gallery-section {
+        min-height: 62vh;
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .carousel-container {
+        height: min(60vh, 620px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-section {
+        min-height: 55vh;
+        padding: 2rem 0 1rem;
+    }
+
+    .carousel-container {
+        height: 52vh;
+    }
+
+    .carousel-control.prev {
+        left: 1rem;
+    }
+
+    .carousel-control.next {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-section {
+        min-height: 44vh;
+        padding: 1.5rem 0 1rem;
+    }
+
+    .carousel-container {
+        height: 40vh;
+    }
+
+    .carousel-control {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
 }
 
 .carousel {
