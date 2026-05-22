@@ -3,19 +3,33 @@
     {
       "regionKey": "region-pv",
       "places": [
-        { "name": "Black Tiger", "instagram": "blacktiger" }
+        { "name": "Solar Barracuda PVR", "instagram": "solar-barracuda-pvr" },
+        { "name": "El Jardín Versalles PVR", "instagram": "el-jardin-versalles-pvr" },
+        { "name": "Blind Tiger PVR", "instagram": "blind-tiger-pvr" },
+        { "name": "Barracuda Punta de Mita", "instagram": "barracuda-punta-de-mita" },
+        { "name": "Rústica Punta de Mita", "instagram": "rustica-punta-de-mita" },
+        { "name": "Mauka Punta de Mita", "instagram": "mauka-punta-de-mita" }
       ]
     },
     {
       "regionKey": "region-sayulita",
       "places": [
-        { "name": "Tierra Tropical", "instagram": "tierratropical" }
-      ]
-    },
-    {
-      "regionKey": "region-sma",
-      "places": [
-        { "name": "Example Venue", "instagram": "example" }
+        { "name": "Tierra Tropical Beach Club", "instagram": "tierra-tropical" },
+        { "name": "TTR Polo Club San Pancho", "instagram": "ttr-polo-club-san-pancho" },
+        { "name": "Rabia San Pancho", "instagram": "rabia-san-pancho" },
+        { "name": "La Cervecería San Pancho", "instagram": "la-cerveceria-san-pancho" },
+        { "name": "Café Bahía San Pancho", "instagram": "cafe-bahia-san-pancho" },
+        { "name": "La Fresona San Pancho", "instagram": "la-fresona-san-pancho" },
+        { "name": "Yambak Sayulita", "instagram": "yambak-sayulita" },
+        { "name": "Santa Sal Sayulita", "instagram": "santa-sal-sayulita" },
+        { "name": "Hula Sayula Sayulita", "instagram": "hula-sayula" },
+        { "name": "Goat Beach Club Sayulita", "instagram": "goat-beach-club" },
+        { "name": "Casa Pepe Hostel Sayulita", "instagram": "casa-pepe-hostel" },
+        { "name": "Chilum Surf House Sayulita", "instagram": "chilum-surf-house" },
+        { "name": "Estela Bar Sayulita", "instagram": "estela-bar" },
+        { "name": "Apapacho Lo de Marcos", "instagram": "apapacho-lo-de-marcos" },
+        { "name": "Jardín Sereín Lo de Marcos", "instagram": "jardin-serein-lo-de-marcos" },
+        { "name": "Olivia Restaurante Lo de Marcos", "instagram": "olivia-restaurante-lo-de-marcos" }
       ]
     }
   ]
