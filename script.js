@@ -152,8 +152,8 @@ const translations = {
         'plays-title': 'Plays at',
         'region-pv': 'Puerto Vallarta',
         'region-pdm': 'Punta de Mita',
-        'region-sanpancho': 'San Pancho',
-        'region-sayulita': 'Sayulita y Riviera Nayarit',
+        'region-sanpancho': 'San Pancho y Riviera Nayarit',
+        'region-sayulita': 'Sayulita',
         'region-sma': 'San Miguel de Allende'
     },
     en: {
@@ -196,8 +196,8 @@ const translations = {
         'plays-title': 'Plays at',
         'region-pv': 'Puerto Vallarta',
         'region-pdm': 'Punta de Mita',
-        'region-sanpancho': 'San Pancho',
-        'region-sayulita': 'Sayulita & Riviera Nayarit',
+        'region-sanpancho': 'San Pancho y Riviera Nayarit',
+        'region-sayulita': 'Sayulita',
         'region-sma': 'San Miguel de Allende'
     }
 };

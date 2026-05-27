@@ -184,6 +184,33 @@ html {
     letter-spacing: 2px;
 }
 
+.hero-contact-card {
+    display: inline-block;
+    margin: 1.5rem auto 0;
+    padding: 1.2rem 1.4rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.hero-contact-card h2 {
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+    color: var(--primary);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero-contact-card p {
+    margin: 0.4rem 0;
+}
+
+.hero-contact-card .contact-link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
 /* ==================== BUTTONS ==================== */
 .cta-button,
 .secondary-button {
