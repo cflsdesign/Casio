@@ -386,7 +386,7 @@ html {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 3rem 0 2rem;
     background: #050505;
     color: #ffffff;
@@ -411,7 +411,7 @@ html {
 .carousel-container {
     width: 100%;
     max-width: 100%;
-    height: min(70vh, 700px);
+    height: min(80vh, 900px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -490,9 +490,15 @@ html {
 .carousel-media {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .carousel-placeholder {

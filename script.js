@@ -168,12 +168,13 @@ const prevButton = document.querySelector('.carousel-control.prev');
 const nextButton = document.querySelector('.carousel-control.next');
 let currentSlideIndex = 0;
 let carouselInterval;
+const galleryManifestPath = './data/gallery.json';
 
 async function loadGallery() {
     let images = galleryFallbackImages;
 
     try {
-        const res = await fetch('data/gallery.json');
+        const res = await fetch(galleryManifestPath);
         if (res.ok) {
             const data = await res.json();
             if (Array.isArray(data.images) && data.images.length > 0) {
@@ -188,7 +189,9 @@ async function loadGallery() {
 
     carouselTrack.innerHTML = images.map((src, idx) => `
         <div class="carousel-item${idx === 0 ? ' active' : ''}">
-            <div class="carousel-media" style="background-image: url('${src}');"></div>
+            <div class="carousel-media">
+                <img src="${src}" alt="Galería ${idx + 1}" loading="lazy" />
+            </div>
         </div>
     `).join('');
 
