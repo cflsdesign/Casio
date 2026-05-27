@@ -111,100 +111,7 @@ const animateNumbers = () => {
 window.addEventListener('scroll', animateNumbers);
 window.addEventListener('load', animateNumbers);
 
-const translations = {
-    es: {
-        'logo-text': 'BIENVENIDO',
-        'nav-fotos': 'Fotos',
-        'nav-eventos': 'Eventos',
-        'nav-musica': 'Música',
-        'nav-biografia': 'Biografía',
-        'nav-contacto': 'Contacto',
-        'bio-title': 'Bio',
-        'bio-heading': 'DJ CASIO',
-        'bio-text-1': 'Con base en la Riviera Nayarit, México. Disfruto diseñar atmósferas musicales para beach clubs, restaurantes y espacios de alto tránsito donde la música es un elemento estratégico de la experiencia.',
-        'bio-subheading': 'Propuesta',
-        'bio-text-2': 'Fusiono varios géneros necesarios para crear una historia, empezando con Jazzy, Funk, Soulful y Disco House elegante. Música House sudafricana de los 90\'s y 2000\'s empieza a marcar el ritmo. Y cuando la pista lo requiere, los sonidos de Nu‑disco, Tech House y algunas bombas encienden la pista.',
-        'bio-text-3': 'En mis sets construyo una narrativa que mantiene una energía constante, sofisticada y accesible: transiciones fluidas, grooves cálidos y percusiones orgánicas que acompañan el flujo del lugar sin interrumpirlo —desde el día, atardecer y hasta la noche—, alineando la música con el ritmo del venue y la experiencia del cliente.',
-        'bio-strong': 'Reforzando la identidad del lugar a través de una selección musical estratégica y adaptable.',
-        'bio-available-title': 'Disponible:',
-        'bio-available-1': 'Actuaciones en clubes, restaurantes y beach clubs.',
-        'bio-available-2': 'Eventos privados',
-        'bio-available-3': 'Eventos corporativos',
-        'bio-available-4': 'Residencias artísticas',
-        'bio-available-5': 'Participaciones en festivales',
-        'bio-available-6': 'Eventos Internacionales',
-        'gallery-title': 'Galería',
-        'events-title': 'Eventos',
-        'event-1-title': 'Black Tiger',
-        'event-1-text': '23 de Mayo 2026 — Calle Allende 103-B, Centro, 48300 Puerto Vallarta, Jal.',
-        'event-2-title': 'Tierra Tropical Beach club',
-        'event-2-text': '24 de Mayo 2026 — San Francisco, Nayarit',
-        'follow-title': 'Sígueme',
-        'contact-title': 'Contacto',
-        'booking-title': 'Booking',
-        'presskit-title': 'Presskit',
-        'presskit-text': 'Descarga el presskit oficial con biografía, fotos de prensa, información de booking y enlaces de redes.',
-        'presskit-button': 'Descargar PDF',
-        'footer-text': '© 2026 DJ Casio. Todos los derechos reservados.',
-        'carousel-prev-label': 'Anterior',
-        'carousel-next-label': 'Siguiente'
-        ,
-        'plays-title': 'Plays at',
-        'region-pv': 'Puerto Vallarta',
-        'region-pdm': 'Punta de Mita',
-        'region-sanpancho': 'San Pancho y Riviera Nayarit',
-        'region-sayulita': 'Sayulita',
-        'region-sma': 'San Miguel de Allende'
-    },
-    en: {
-        'logo-text': 'WELCOME',
-        'nav-fotos': 'Photos',
-        'nav-eventos': 'Events',
-        'nav-musica': 'Music',
-        'nav-biografia': 'Biography',
-        'nav-contacto': 'Contact',
-        'bio-title': 'Bio',
-        'bio-heading': 'DJ CASIO',
-        'bio-text-1': 'Based in Riviera Nayarit, Mexico. I enjoy designing musical atmospheres for beach clubs, restaurants and high-traffic venues where music is a strategic element of the experience.',
-        'bio-subheading': 'Approach',
-        'bio-text-2': 'I blend multiple genres needed to tell a story, starting with Jazzy, Funk, Soulful and elegant Disco House. South African House music from the 90s and 2000s begins to set the pace. And when the dancefloor asks for it, Nu-disco, Tech House and powerful drops light up the room.',
-        'bio-text-3': 'In my sets I build a narrative that maintains a constant, sophisticated and accessible energy: fluid transitions, warm grooves and organic percussion that accompany the flow of the venue without interrupting it —from daytime, sunset and into the night— aligning the music with the venue rhythm and guest experience.',
-        'bio-strong': 'Reinforcing the venue identity through a strategic and adaptable musical selection.',
-        'bio-available-title': 'Available for:',
-        'bio-available-1': 'Performances at clubs, restaurants and beach clubs.',
-        'bio-available-2': 'Private events',
-        'bio-available-3': 'Corporate events',
-        'bio-available-4': 'Artist residencies',
-        'bio-available-5': 'Festival appearances',
-        'bio-available-6': 'International events',
-        'gallery-title': 'Gallery',
-        'events-title': 'Events',
-        'event-1-title': 'Black Tiger',
-        'event-1-text': 'May 23, 2026 — Calle Allende 103-B, Centro, 48300 Puerto Vallarta, Jal.',
-        'event-2-title': 'Tierra Tropical Beach club',
-        'event-2-text': 'May 24, 2026 — San Francisco, Nayarit',
-        'follow-title': 'Follow',
-        'contact-title': 'Contact',
-        'booking-title': 'Booking',
-        'presskit-title': 'Presskit',
-        'presskit-text': 'Download the official presskit with biography, press photos, booking information and social media links.',
-        'presskit-button': 'Download PDF',
-        'footer-text': '© 2026 DJ Casio. All rights reserved.',
-        'carousel-prev-label': 'Previous',
-        'carousel-next-label': 'Next'
-        ,
-        'plays-title': 'Plays at',
-        'region-pv': 'Puerto Vallarta',
-        'region-pdm': 'Punta de Mita',
-        'region-sanpancho': 'San Pancho y Riviera Nayarit',
-        'region-sayulita': 'Sayulita',
-        'region-sma': 'San Miguel de Allende'
-    }
-};
-
-const i18nElements = document.querySelectorAll('[data-i18n]');
-const i18nLabelElements = document.querySelectorAll('[data-i18n-label]');
-const langToggle = document.getElementById('lang-toggle');
+const translations = {};
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -216,9 +123,8 @@ async function loadPlays() {
         const grid = document.querySelector('.plays-grid');
         if (!grid) return;
         grid.innerHTML = '';
-        const lang = localStorage.getItem('siteLang') || document.documentElement.lang || 'es';
         data.regions.forEach(region => {
-            const regionTitle = (translations[lang] && translations[lang][region.regionKey]) ? translations[lang][region.regionKey] : region.regionKey;
+            const regionTitle = region.title || region.regionKey;
             const regionDiv = document.createElement('div');
             regionDiv.className = 'plays-region';
             const itemsHtml = region.places.map(p => `
@@ -230,36 +136,6 @@ async function loadPlays() {
     } catch (e) {
         console.error('Failed to load plays data', e);
     }
-}
-
-function setLanguage(lang) {
-    const strings = translations[lang] || translations.es;
-    i18nElements.forEach(el => {
-        const key = el.dataset.i18n;
-        if (strings[key]) {
-            el.innerHTML = strings[key];
-        }
-    });
-    i18nLabelElements.forEach(el => {
-        const key = el.dataset.i18nLabel;
-        if (strings[key]) {
-            el.setAttribute('aria-label', strings[key]);
-        }
-    });
-    document.documentElement.lang = lang;
-    localStorage.setItem('siteLang', lang);
-    if (langToggle) {
-        langToggle.textContent = lang === 'es' ? 'EN' : 'ES';
-    }
-    if (typeof loadPlays === 'function') loadPlays();
-}
-
-if (langToggle) {
-    langToggle.addEventListener('click', () => {
-        const currentLang = localStorage.getItem('siteLang') || 'es';
-        setLanguage(currentLang === 'es' ? 'en' : 'es');
-        if (typeof loadPlays === 'function') loadPlays();
-    });
 }
 
 if (navToggle && navLinks) {
@@ -276,24 +152,64 @@ if (navToggle && navLinks) {
     });
 }
 
-const initialLang = localStorage.getItem('siteLang') || 'es';
-setLanguage(initialLang);
-
 loadPlays();
 
 console.log('DJ Casio Presskit - Website loaded successfully! 🎵');
 
+const galleryFallbackImages = [
+    'geleria/Dj_Casio_4.jpg',
+    'geleria/Dj_Casio_5.jpg',
+    'geleria/Casio6.jpg'
+];
+
 const carouselTrack = document.querySelector('.carousel-track');
-const carouselItems = Array.from(document.querySelectorAll('.carousel-item'));
+let carouselItems = Array.from(document.querySelectorAll('.carousel-item'));
 const prevButton = document.querySelector('.carousel-control.prev');
 const nextButton = document.querySelector('.carousel-control.next');
 let currentSlideIndex = 0;
+let carouselInterval;
+
+async function loadGallery() {
+    let images = galleryFallbackImages;
+
+    try {
+        const res = await fetch('data/gallery.json');
+        if (res.ok) {
+            const data = await res.json();
+            if (Array.isArray(data.images) && data.images.length > 0) {
+                images = data.images;
+            }
+        }
+    } catch (err) {
+        console.warn('Gallery manifest not loaded:', err);
+    }
+
+    if (!carouselTrack) return;
+
+    carouselTrack.innerHTML = images.map((src, idx) => `
+        <div class="carousel-item${idx === 0 ? ' active' : ''}">
+            <div class="carousel-media" style="background-image: url('${src}');"></div>
+        </div>
+    `).join('');
+
+    carouselItems = Array.from(document.querySelectorAll('.carousel-item'));
+    if (carouselItems.length === 0) {
+        if (prevButton) prevButton.style.display = 'none';
+        if (nextButton) nextButton.style.display = 'none';
+    }
+}
 
 function updateCarousel(index) {
     if (!carouselTrack || carouselItems.length === 0) return;
     currentSlideIndex = (index + carouselItems.length) % carouselItems.length;
     carouselTrack.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
     carouselItems.forEach((item, idx) => item.classList.toggle('active', idx === currentSlideIndex));
+}
+
+function startCarouselAutoPlay() {
+    if (carouselInterval) clearInterval(carouselInterval);
+    if (carouselItems.length <= 1) return;
+    carouselInterval = setInterval(() => updateCarousel(currentSlideIndex + 1), 7000);
 }
 
 if (prevButton) {
@@ -312,14 +228,15 @@ window.addEventListener('keydown', (event) => {
     }
 });
 
-let carouselInterval = setInterval(() => updateCarousel(currentSlideIndex + 1), 7000);
-
 [prevButton, nextButton].forEach(button => {
     if (!button) return;
     button.addEventListener('mouseenter', () => clearInterval(carouselInterval));
     button.addEventListener('mouseleave', () => {
-        carouselInterval = setInterval(() => updateCarousel(currentSlideIndex + 1), 7000);
+        startCarouselAutoPlay();
     });
 });
 
-updateCarousel(0);
+loadGallery().then(() => {
+    updateCarousel(0);
+    startCarouselAutoPlay();
+});

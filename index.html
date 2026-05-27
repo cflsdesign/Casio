@@ -13,16 +13,15 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="logo" data-i18n="logo-text">WELCOME</div>
+            <div class="logo">WELCOME</div>
             <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
             <ul class="nav-links">
-                <li><a href="#fotos" data-i18n="nav-fotos">Fotos</a></li>
-                <li><a href="#eventos" data-i18n="nav-eventos">Eventos</a></li>
-                <li><a href="#musica" data-i18n="nav-musica">Música</a></li>
-                <li><a href="#biografia" data-i18n="nav-biografia">Biografía</a></li>
-               <!--  <li><a href="#prensa" data-i18n="nav-prensa">Prensa</a></li> -->
-                <li><a href="#contacto" data-i18n="nav-contacto">Contacto</a></li>
-                <li class="lang-switch"><button id="lang-toggle" class="lang-toggle" type="button">EN</button></li>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+               <!--  <li><a href="#prensa">Prensa</a></li> -->
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -74,7 +73,7 @@
 
         <!-- Plays At Section -->
         <section id="plays" class="section plays-section">
-            <h2 data-i18n="plays-title">Plays at</h2>
+            <h2>Plays at</h2>
             <div class="plays-grid">
                 <!-- Rendered dynamically from data/plays.json -->
             </div>
@@ -83,23 +82,15 @@
         <!-- Fotos Section -->
         <section id="fotos" class="section gallery-section">
             <div class="gallery-header">
-                <h2 data-i18n="gallery-title">Galería</h2>
+                <h2>Galería</h2>
             </div>
             <div class="carousel-container">
                 <div class="carousel">
-                    <button class="carousel-control prev" aria-label="Anterior" data-i18n-label="carousel-prev-label">‹</button>
-                    <div class="carousel-track">
-                        <div class="carousel-item active">
-                            <div class="carousel-media" style="background-image: url('geleria/Dj_Casio_4.jpg');"></div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-media" style="background-image: url('geleria/Dj_Casio_5.jpg');"></div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-media" style="background-image: url('geleria/Casio6.jpg');"></div>
-                        </div>
+                    <button class="carousel-control prev" aria-label="Anterior">‹</button>
+                            <div class="carousel-track">
+                        <!-- Gallery items are rendered dynamically from data/gallery.json or from the fallback list in script.js -->
                     </div>
-                    <button class="carousel-control next" aria-label="Siguiente" data-i18n-label="carousel-next-label">›</button>
+                    <button class="carousel-control next" aria-label="Siguiente">›</button>
                 </div>
             </div>
         </section>
@@ -153,15 +144,15 @@
 
         <!-- Eventos Section -->
         <section id="eventos" class="section">
-            <h2 data-i18n="events-title">Próximos Eventos</h2>
+            <h2>Próximos Eventos</h2>
             <div class="event-list">
                 <article class="event-item">
-                    <h3 data-i18n="event-1-title">Black Tiger</h3>
-                    <p data-i18n="event-1-text">23 de Mayo 2026 — Calle Allende 103-B, Centro, 48300 Puerto Vallarta, Jal.</p>
+                    <h3>Black Tiger</h3>
+                    <p>23 de Mayo 2026 — Calle Allende 103-B, Centro, 48300 Puerto Vallarta, Jal.</p>
                 </article>
                 <article class="event-item">
-                    <h3 data-i18n="event-2-title">Tierra Tropical Beach club</h3>
-                    <p data-i18n="event-2-text">24 de Mayo 2026 — San Francisco, Nayarit</p>
+                    <h3>Tierra Tropical Beach club</h3>
+                    <p>24 de Mayo 2026 — San Francisco, Nayarit</p>
                 </article>
             
             </div>
@@ -169,7 +160,7 @@
 
         <!-- Social & Links -->
         <section id="redes" class="section">
-            <h2 data-i18n="follow-title">Sígueme</h2>
+            <h2>Sígueme</h2>
             <div class="social-links">
                 <a href="https://open.spotify.com/user/1291365788?si=51f7965dbd4f46f4" class="social-btn" title="Spotify" target="_blank" rel="noreferrer"> Spotify</a>
                 <a href="https://soundcloud.com/mexicanjackmafia" class="social-btn" title="SoundCloud" target="_blank" rel="noreferrer"> SoundCloud</a>
@@ -180,10 +171,10 @@
 
         <!-- Contact Section -->
         <section id="contacto" class="section contact-section">
-            <h2 data-i18n="contact-title">Contacto</h2>
+            <h2>Contacto</h2>
             <div class="contact-grid">
                 <div class="contact-card">
-                    <h3 data-i18n="booking-title">Booking</h3>
+                    <h3>Booking</h3>
                     <p><a href="mailto:cflsdesign@gmail.com" class="contact-link">cflsdesign@gmail.com</a></p>
                     <p><a href="https://wa.me/523224291915" class="contact-link" target="_blank" rel="noreferrer">+52 (322) 4291915</a></p>
                 </div>
@@ -192,10 +183,10 @@
 
         <!-- Presskit Section -->
         <section id="presskit" class="section presskit-section">
-            <h2 data-i18n="presskit-title">Presskit</h2>
+            <h2>Presskit</h2>
             <div class="presskit-card">
-                <p data-i18n="presskit-text">Descarga el presskit oficial con biografía, fotos de prensa, información de booking y enlaces de redes.</p>
-                <a href="presskit.pdf" class="cta-button" download data-i18n="presskit-button">Descargar PDF</a>
+                <p>Descarga el presskit oficial con biografía, fotos de prensa, información de booking y enlaces de redes.</p>
+                <a href="presskit.pdf" class="cta-button" download>Descargar PDF</a>
             </div>
         </section>
 
@@ -204,7 +195,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p data-i18n="footer-text">© 2026 DJ Casio. Todos los derechos reservados.</p>
+            <p>© 2026 DJ Casio. Todos los derechos reservados.</p>
         </div>
     </footer>
 
