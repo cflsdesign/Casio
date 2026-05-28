@@ -684,7 +684,7 @@ html {
 
 .social-btn {
     padding: 12px 30px;
-    background: var(--dark-bg);
+    background: var(--primary);
     border: 2px solid var(--primary);
     color: var(--primary);
     text-decoration: none;
