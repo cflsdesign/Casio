@@ -1,8 +1,6 @@
 @import url('https://fonts.stackoverflow.com/stack-sans.css');
-
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-</style>
+
 
 /* ==================== VARIABLES Y RESET ==================== */
 :root {
@@ -24,7 +22,7 @@
 }
 
 body {
-    font-family: 'Stack Sans Text', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Dela Gothic One', 'Stack Sans Text', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--dark-bg);
     color: var(--text-primary);
     line-height: 1.6;
