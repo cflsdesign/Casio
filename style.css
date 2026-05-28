@@ -741,14 +741,14 @@ html {
 }
 
 .contact-link {
-    color: var(--primary);
+    color: var(#000000);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
     position: relative;
 }
 
-/* .contact-link:hover {
+.contact-link:hover {
     color: var(--secondary);
 }
 
