@@ -384,7 +384,9 @@ html {
 .bio-long p {
     color: var(--text-secondary);
     line-height: 1.8;
+    font-family: 'Stack Sans Text', sans-serif;
 }
+
 
 /* ==================== GALERÍA ==================== */
 .gallery-section {
