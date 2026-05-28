@@ -277,6 +277,7 @@ html {
     height: 4px;
     background: var(--secondary);
     border-radius: 2px;
+    font-family: 'Dela Gothic One'
 }
 
 .presskit-section {
@@ -789,6 +790,8 @@ html {
 
     .section h2 {
         font-size: 2rem;
+        font-family: 'Dela Gothic One'
+        
     }
 
     .gallery-section {
