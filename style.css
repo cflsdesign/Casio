@@ -174,7 +174,7 @@ html {
 
 .hero h1 {
     font-size: 30rem;
-    font-weight: 900;
+    font-weight: 600;
     margin-bottom: 1rem;
     color:  var(--dark-bg);
     letter-spacing: 3px;
