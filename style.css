@@ -176,7 +176,7 @@ html {
     margin-bottom: 1rem;
     color:  var(--dark-bg);
     letter-spacing: 3px;
-    font-family: 'Stack Sans Text', sans-serif;
+    font-family: 'Dela Gothic One';
 }
 
 .hero p {
@@ -202,6 +202,7 @@ html {
     color: var(--primary);
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    font-family: 'Dela Gothic One', 'Stack Sans Text', sans-serif;
 }
 
 .hero-contact-card p {
