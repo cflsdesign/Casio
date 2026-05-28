@@ -254,7 +254,7 @@ html {
 
 .section h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     text-align: center;
     position: relative;
     display: inline-block;
@@ -320,7 +320,7 @@ html {
 
 .plays-region h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
 }
 
 .plays-region ul {
