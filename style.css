@@ -50,6 +50,7 @@ html {
     border-bottom: 0px solid var(--border);
     z-index: 1000;
     animation: slideDown 0.5s ease;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 @keyframes slideDown {
@@ -105,7 +106,8 @@ html {
     background: transparent;
     border: none;
     cursor: pointer;
-    font-family: inherit;
+    font-family: 'Stack Sans Text', sans-serif;
+    
 }
 
 .lang-toggle {
@@ -367,6 +369,7 @@ html {
     box-shadow: none;
     transition: none;
     text-align: justify;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .bio-short h3,
