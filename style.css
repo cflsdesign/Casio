@@ -264,7 +264,7 @@ html {
     position: relative;
     display: inline-block;
     width: 100%;
-    font-family: 'Stack Sans Text', sans-serif;
+    font-family: 'Dela Gothic One';
 }
 
 .section h2::after {
@@ -306,6 +306,7 @@ html {
     color: var(--text-primary);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .plays-grid {
