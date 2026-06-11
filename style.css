@@ -1,6 +1,4 @@
 @import url('https://fonts.stackoverflow.com/stack-sans.css');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-
 
 /* ==================== VARIABLES Y RESET ==================== */
 :root {
@@ -22,7 +20,7 @@
 }
 
 body {
-    font-family: 'Dela Gothic One', 'Stack Sans Text', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Stack Sans Text', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--dark-bg);
     color: var(--text-primary);
     line-height: 1.6;
@@ -50,7 +48,6 @@ html {
     border-bottom: 0px solid var(--border);
     z-index: 1000;
     animation: slideDown 0.5s ease;
-    font-family: 'Stack Sans Text', sans-serif;
 }
 
 @keyframes slideDown {
@@ -106,8 +103,7 @@ html {
     background: transparent;
     border: none;
     cursor: pointer;
-    font-family: 'Stack Sans Text', sans-serif;
-    
+    font-family: inherit;
 }
 
 .lang-toggle {
@@ -174,11 +170,11 @@ html {
 
 .hero h1 {
     font-size: 30rem;
-    font-weight: 600;
+    font-weight: 900;
     margin-bottom: 1rem;
     color:  var(--dark-bg);
     letter-spacing: 3px;
-    font-family: 'Dela Gothic One';
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .hero p {
@@ -204,7 +200,6 @@ html {
     color: var(--primary);
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .hero-contact-card p {
@@ -259,12 +254,12 @@ html {
 
 .section h2 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     text-align: center;
     position: relative;
     display: inline-block;
     width: 100%;
-    font-family: 'Dela Gothic One';
+    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .section h2::after {
@@ -277,11 +272,131 @@ html {
     height: 4px;
     background: var(--secondary);
     border-radius: 2px;
-    font-family: 'Dela Gothic One'
 }
 
 .presskit-section {
     background: transparent;
+}
+
+.instagram-section {
+    background: #fcfcfc;
+}
+
+.instagram-card {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 30px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+.instagram-card:hover {
+    transform: translateY(-3px);
+}
+
+.instagram-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.instagram-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, #fdf497 0%, #fd5949 35%, #d6249f 65%, #285AEB 100%);
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.instagram-card h3 {
+    margin: 0 0 0.4rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.instagram-card p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+.instagram-embed-placeholder {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.instagram-embed-placeholder p {
+    margin: 0;
+    color: var(--text-secondary);
+    max-width: 720px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.instagram-post-card {
+    display: block;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #111111;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.instagram-post-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.18);
+}
+
+.instagram-post-thumb {
+    position: relative;
+    min-height: 200px;
+    background: radial-gradient(circle at top left, #fd5949 0%, #d6249f 35%, #285AEB 100%);
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.instagram-post-thumb span {
+    opacity: 0.95;
+}
+
+.instagram-post-label {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 960px) {
+    .instagram-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .instagram-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .presskit-card {
@@ -307,7 +422,6 @@ html {
     color: var(--text-primary);
     padding-top: 2rem;
     padding-bottom: 2rem;
-    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .plays-grid {
@@ -327,7 +441,7 @@ html {
 
 .plays-region h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
 }
 
 .plays-region ul {
@@ -338,12 +452,12 @@ html {
 .plays-region .place-item {
     margin: 0.45rem 0;
     color: var(--text-secondary);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.35;
 }
 
 .plays-region .place-name {
-    font-weight: 300;
+    font-weight: 600;
     color: #999999;
 }
 
@@ -371,7 +485,6 @@ html {
     box-shadow: none;
     transition: none;
     text-align: justify;
-    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .bio-short h3,
@@ -386,9 +499,7 @@ html {
 .bio-long p {
     color: var(--text-secondary);
     line-height: 1.8;
-    font-family: 'Stack Sans Text', sans-serif;
 }
-
 
 /* ==================== GALERÍA ==================== */
 .gallery-section {
@@ -423,7 +534,7 @@ html {
 .carousel-container {
     width: 100%;
     max-width: 100%;
-    height: min(1000px, 1500px);
+    height: min(80vh, 900px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,7 +805,7 @@ html {
 
 .social-btn {
     padding: 12px 30px;
-    background: var(--primary);
+    background: var(--dark-bg);
     border: 2px solid var(--primary);
     color: var(--primary);
     text-decoration: none;
@@ -731,7 +842,6 @@ html {
     border: none;
     text-align: center;
     transition: var(--transition);
-    font-family: 'Stack Sans Text', sans-serif;
 }
 
 /*.contact-card:hover {
@@ -752,14 +862,14 @@ html {
 }
 
 .contact-link {
-    color: var(#000000);
+    color: var(--primary);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
     position: relative;
 }
 
-.contact-link:hover {
+/* .contact-link:hover {
     color: var(--secondary);
 }
 
@@ -771,7 +881,6 @@ html {
     text-align: center;
     color: var(--text-secondary);
     margin-top: 5rem;
-    font-family: 'Stack Sans Text', sans-serif;
 }
 
 .footer p {
@@ -790,8 +899,6 @@ html {
 
     .section h2 {
         font-size: 2rem;
-        font-family: 'Dela Gothic One'
-        
     }
 
     .gallery-section {
