@@ -350,41 +350,35 @@ html {
     margin-top: 2rem;
 }
 
-.instagram-post-card {
-    display: block;
-    border-radius: 24px;
+.instagram-embed-card {
+    width: 100%;
+    min-height: 400px;
     overflow: hidden;
-    background: #111111;
-    color: #ffffff;
-    text-decoration: none;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.instagram-post-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.18);
+.instagram-embed-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
 }
 
-.instagram-post-thumb {
-    position: relative;
-    min-height: 200px;
-    background: radial-gradient(circle at top left, #fd5949 0%, #d6249f 35%, #285AEB 100%);
-    display: grid;
-    place-items: center;
-    font-size: 3rem;
-    font-weight: 800;
-    color: #ffffff;
+.instagram-embed-card blockquote {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
-.instagram-post-thumb span {
-    opacity: 0.95;
+.instagram-embed-card iframe {
+    width: 100% !important;
+    min-height: 100% !important;
 }
 
-.instagram-post-label {
-    padding: 1rem;
-    font-size: 1rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.3);
+.instagram-embed-card .instagram-media {
+    width: 100% !important;
+    visibility: visible !important;
 }
 
 @media (max-width: 960px) {

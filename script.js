@@ -76,7 +76,16 @@ document.querySelectorAll('.gallery-item').forEach(item => {
 // Loading animation
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
+    if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+        window.instgrm.Embeds.process();
+    }
 });
+
+function processInstagramEmbeds() {
+    if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+        window.instgrm.Embeds.process();
+    }
+}
 
 // Detectar si está en viewport
 function isInViewport(element) {
