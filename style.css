@@ -371,6 +371,10 @@ html {
     min-height: 100%;
 }
 
+.instagram-embed-card blockquote a {
+    display: none !important;
+}
+
 .instagram-embed-card iframe {
     width: 100% !important;
     min-height: 100% !important;
