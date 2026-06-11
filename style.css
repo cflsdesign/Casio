@@ -425,7 +425,7 @@ html {
 
 .plays-grid {
     display: flex;
-    gap: 2.5rem;
+    gap: 1rem;
     justify-content: center;
     align-items: flex-start;
     max-width: 1200px;
